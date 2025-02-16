@@ -45,6 +45,7 @@ img {
 .hr--line {
   border-color: #00945f;
   width: 100%;
+  background: #00945f;
 }
 
 .logo {
