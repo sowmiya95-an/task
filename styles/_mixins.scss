@@ -13,7 +13,6 @@
    position: absolute;
    content: "";
    display: block;
-
    @include breakpoint(lg)
     {
       display: none;
@@ -34,6 +33,14 @@
         width: 70px;
         display: block;
         margin: 20px auto;
+    }
+    @include breakpoint(md)
+    {
+        font-size: 25px;
+        &::after
+        {
+            margin: 15px auto;
+        }
     }
 }
 
