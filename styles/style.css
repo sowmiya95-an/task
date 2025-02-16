@@ -24,11 +24,11 @@ img {
   }
 }
 
-.border.d-none {
+.no--border {
   border: none;
 }
 @media (max-width: 992px) {
-  .border.d-none {
+  .no--border {
     border-bottom: 1px solid #888888;
   }
 }
@@ -87,7 +87,7 @@ img {
     margin: 15px auto;
   }
 }
-.ourinvestment p {
+.ourinvestment__text {
   text-align: left;
 }
 .ourinvestment__btn {
@@ -159,11 +159,11 @@ img {
   }
 }
 @media (max-width: 992px) {
-  .advantage .b-none {
+  .advantage .no--border {
     border-bottom: none;
   }
 }
-.advantage p {
+.advantage__text {
   color: #888888;
 }
 .advantage__subtitle {
@@ -201,13 +201,18 @@ img {
   padding: 25px 55px;
   background-color: #ebf7f5;
 }
-.homeloans__cont p {
-  color: #888888;
+@media (max-width: 768px) {
+  .homeloans__cont {
+    padding: 25px 20px;
+  }
 }
 @media (max-width: 576px) {
   .homeloans__cont {
     padding: 25px 10px;
   }
+}
+.homeloans__text {
+  color: #888888;
 }
 
 .ourteam {
@@ -259,13 +264,13 @@ img {
 .footer__icon {
   width: auto;
 }
-.footer p {
+.footer__text {
   font-size: 12px;
   color: #888888;
   margin-bottom: 15px;
   line-height: normal;
 }
-.footer p a {
+.footer__text a {
   text-decoration: underline;
   color: #888888;
 }

@@ -12,7 +12,7 @@
  }
 
 
- .border.d-none 
+ .no--border
  {
     border: none;
     @include breakpoint(lg)
@@ -61,7 +61,7 @@
     {
         @include heading-style;
     }
-    p 
+    &__text 
     {
         text-align: left;
     }
@@ -101,17 +101,16 @@
            border-bottom: 1px solid #a3a3a3;
         }
     }
-    .b-none
+    .no--border
     {
         @include breakpoint(lg)
         {
           border-bottom: none;
         }
     }
-  
-    p 
+    &__text
     {
-        color:$body-text-color;
+        color: $body-text-color;
     }
     &__subtitle
     {
@@ -152,14 +151,18 @@
     {
         padding: 25px 55px;
         background-color: $secondary-color;
-        p 
+        @include breakpoint(md)
         {
-            color: $body-text-color;
+            padding: 25px 20px;
         }
         @include breakpoint(sm)
         {
             padding: 25px 10px;
         }
+    }
+    &__text
+    {
+        color: $body-text-color;
     }
 }
 
@@ -220,7 +223,7 @@
     {
         width: auto;
     }
-    p 
+    &__text
     {
         font-size: 12px;
         color: $body-text-color;
