@@ -1,0 +1,78 @@
+@mixin grid
+{
+    display: grid;
+    gap: 20px;
+}
+
+@mixin border 
+{
+   border-right: 1px solid #a3a3a3;
+   top: 25px;
+   right: 0;
+   height: 80%;
+   position: absolute;
+   content: "";
+   display: block;
+
+   @include breakpoint(lg)
+    {
+      display: none;
+    }
+}
+
+@mixin heading-style 
+{
+    font-size:30px;
+    text-align: center;
+    color:$primary-color;
+
+    &::after
+    {
+        background-color: $primary-color;
+        content: '';
+        height: 2px;
+        width: 70px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@mixin subtitle 
+{
+    font-size: 25px;
+    color: $primary-color;
+    margin-bottom: 15px;
+}
+
+@mixin btn
+{
+    text-align: center;
+    color: #fff;
+    background-color: $btn-color;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 35px;
+    font-size:18px;
+}
+@mixin breakpoint($point) 
+{
+    @if $point == sm {
+      @media (max-width: 576px) { @content; }
+    }
+    @else if $point == md {
+      @media (max-width: 768px) { @content; }
+    }
+    @else if $point == lg {
+      @media (max-width: 992px) { @content; }
+    }
+    @else if $point == xl {
+        @media (max-width: 1200px) { @content; }
+    }
+
+}
+
+@mixin custom($point) {
+    @media (device-width: $point) {
+        @content;
+    }
+ }

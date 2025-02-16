@@ -1,0 +1,238 @@
+@import 'global';
+@import 'variable';
+@import 'mixins';
+
+ .space
+ {
+     padding: 20px 40px;
+     @include breakpoint(md)
+     {
+        padding: 15px 20px;
+     }
+ }
+
+
+ .border.d-none 
+ {
+    border: none;
+    @include breakpoint(lg)
+    {
+       border-bottom: 1px solid $body-text-color;
+    }
+ }
+
+ .pd 
+ {
+    padding: 30px 0;
+    @include breakpoint(md)
+    {
+       padding: 10px 0;
+    }
+ }
+
+ .logo 
+ {
+    padding: 40px 40px;
+    @include breakpoint(md)
+    {
+       text-align: center;
+       padding: 20px 40px;
+    }
+ }
+
+
+.ourinvestment
+{
+    position: relative;
+    color:$body-text-color;
+    text-align: center;
+
+    &__title
+    {
+        @include heading-style;
+    }
+    p 
+    {
+        text-align: left;
+    }
+    &__btn
+    {
+        @include btn;
+    }
+}
+
+.advantage
+{
+    position: relative;
+    &__title
+    {
+        @include heading-style;
+    }
+    &__row
+    {
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        @include grid;
+        @include breakpoint(lg) 
+        {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__border 
+    {
+        @include border;
+    }
+    &__col
+    {
+        position: relative;
+        @include breakpoint(lg) 
+        {
+           padding-bottom: 20px;
+           border-bottom: 1px solid #a3a3a3;
+        }
+    }
+    .b-none
+    {
+        @include breakpoint(lg)
+        {
+          border-bottom: none;
+        }
+    }
+  
+    p 
+    {
+        color:$body-text-color;
+    }
+    &__subtitle
+    {
+        @include subtitle;
+        @include breakpoint(md) 
+        {
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+    &__more 
+    {
+        color: $highlight-color;
+        text-decoration: none;
+    }
+}
+
+.homeloans
+{
+    &__title
+    {
+        color: #fff;
+        background-color: $primary-color;
+        padding: 10px;
+        text-align: center;
+    }
+ 
+    h1 
+    {
+        font-size: 25px;
+        font-weight: normal;
+        @include breakpoint(sm)
+        {
+            font-size: 22px;
+        }
+    }
+    &__cont
+    {
+        padding: 25px 55px;
+        background-color: $secondary-color;
+        p 
+        {
+            color: $body-text-color;
+        }
+        @include breakpoint(sm)
+        {
+            padding: 25px 10px;
+        }
+    }
+}
+
+.ourteam 
+{
+    position: relative;
+    margin-bottom: 15px;
+    &__grid 
+    {
+        grid-template-columns:1fr 2fr 1fr;
+        padding: 25px 0;
+        @include grid;
+        @include breakpoint(lg) {
+            grid-template-columns:1fr;
+        }
+    }
+    &__item 
+    {
+        text-align: center;
+        padding: 0 60px;
+        @include breakpoint(xl) {
+            padding: 0 20px;
+        }
+    }
+
+    &__text 
+    {
+        font-style: italic;
+        color: $body-text-color;
+        position: relative;
+    }
+    &__quote 
+    {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+    &__name 
+    {
+        font-style: normal;
+        color: $primary-color;
+        margin-top: 10px;
+    }
+    img 
+    {
+        width: auto;
+    }
+}
+
+
+.footer 
+{
+    &__socialicon
+    {
+        margin-bottom: 15px;
+    }
+    &__icon
+    {
+        width: auto;
+    }
+    p 
+    {
+        font-size: 12px;
+        color: $body-text-color;
+        margin-bottom: 15px;
+        line-height: normal;
+        a 
+        {
+            text-decoration: underline;
+            color: $body-text-color;
+        }
+    }
+    ul
+    {
+        display: flex;
+        li
+        {
+            list-style: none;
+            font-size: 12px;
+        }
+    }
+    &__divider 
+    {
+        margin: 0 5px;
+    }
+}
