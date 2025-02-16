@@ -10,8 +10,11 @@
    <header>
         <nav>
             <div class="logo space">
-                <img src="img/logo.png" style="width: auto;" alt="logo">
-              
+                <picture>
+                    <source media="(min-width: 650px)" srcset="img/logo.png">
+                    <source media="(min-width: 465px)" srcset="img/mob-logo.png">
+                    <img src="img/logo.png" style="width: auto;" alt="logo">
+                </picture>
             </div>
         </nav>
         <div class="banner">
