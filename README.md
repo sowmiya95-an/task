@@ -9,3 +9,5 @@ This project is a simple static webpage , showcasing various sections such as in
 - **CSS**: The compiled CSS from SCSS for styling the webpage.
 
 
+![mob-view](https://github.com/user-attachments/assets/962e9227-f342-477f-91d5-3fd9f72acff4)
+![Desktop-view](https://github.com/user-attachments/assets/36fc21d9-90c4-4c1e-ba70-2b15b0e5172b)
