@@ -4,11 +4,24 @@
 
  .space
  {
-     padding: 20px 40px;
-     @include breakpoint(md)
-     {
+
+    padding: 20px 100px;
+    @include breakpoint(wide)
+    {
+        padding: 20px 60px;
+    }
+    @include breakpoint(xll)
+    {
+       padding: 20px 40px;
+    }
+    @include breakpoint(md)
+    {
         padding: 15px 20px;
-     }
+    }
+    @include breakpoint(sm)
+    {
+        padding: 10px 10px;
+    }
  }
 
 
@@ -38,7 +51,15 @@
 
  .logo 
  {
-    padding: 40px 40px;
+    padding: 40px 80px;
+    @include breakpoint(xl)
+    {
+       padding: 40px 50px;
+    }
+    @include breakpoint(lg)
+    {
+       padding: 40px 40px;
+    }
     @include breakpoint(md)
     {
        text-align: center;

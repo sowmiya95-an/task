@@ -61,6 +61,7 @@
     margin-top: 35px;
     font-size:18px;
 }
+
 @mixin breakpoint($point) 
 {
     @if $point == sm {
@@ -75,7 +76,12 @@
     @else if $point == xl {
         @media (max-width: 1200px) { @content; }
     }
-
+    @else if $point == xll {
+        @media (max-width: 1400px) { @content; }
+    }
+    @else if $point == wide {
+        @media (max-width: 1900px) { @content; }
+    }
 }
 
 @mixin custom($point) {
