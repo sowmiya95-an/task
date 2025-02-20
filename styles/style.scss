@@ -51,10 +51,11 @@
 
  .logo 
  {
-    padding: 40px 80px;
-    @include breakpoint(xl)
+   
+    padding: 40px 100px;
+    @include breakpoint(wide)
     {
-       padding: 40px 50px;
+        padding: 40px 60px;
     }
     @include breakpoint(lg)
     {
@@ -63,7 +64,7 @@
     @include breakpoint(md)
     {
        text-align: center;
-       padding: 20px 40px;
+       padding: 40px 20px;
     }
     &__img 
     {
